@@ -1,0 +1,42 @@
+const reducer = (state = 5) => {
+
+return state;
+
+}
+// Redux methods are available from a Redux object
+// For example: Redux.createStore()
+// Define the store here:
+const store = Redux.createStore(reducer)
+
+const store = Redux.createStore(
+    (state = 5) => state
+  );
+  
+  // Change code below this line
+  
+  let currentState = store.getState();
+
+  // Define an action here:
+let action={
+    type: 'LOGIN'
+  }
+
+  const action = {
+    type: 'LOGIN'
+  }
+  // Define an action creator here:
+  function actionCreator() {
+    return action;
+  }
+  const store = Redux.createStore(
+    (state = {login: false}) => state
+  );
+  
+  const loginAction = () => {
+    return {
+      type: 'LOGIN'
+    }
+  };
+  
+  // Dispatch the action here:
+  store.dispatch(loginAction());
